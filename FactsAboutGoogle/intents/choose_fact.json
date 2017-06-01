@@ -1,0 +1,188 @@
+{
+  "userSays": [
+    {
+      "id": "5c0ca84e-8e50-4d41-ba93-a9c05e98adda",
+      "data": [
+        {
+          "text": "The "
+        },
+        {
+          "text": "history of Google",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2fed865e-df7d-47cc-9ad1-d600b23a3b1e",
+      "data": [
+        {
+          "text": "Google\u0027s history",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "75a5f609-c867-435d-818c-e79d3f4d3603",
+      "data": [
+        {
+          "text": "Tell me about Google"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "69969be2-e794-4d6b-b5ce-791fe9255b81",
+      "data": [
+        {
+          "text": "I want to hear about Google"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fb815966-d5c3-4e84-ad28-08100e1f6da0",
+      "data": [
+        {
+          "text": "Let\u0027s hear about "
+        },
+        {
+          "text": "Google\u0027s headquarters",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6e0b7476-5624-4c62-a2fc-022c073af4fd",
+      "data": [
+        {
+          "text": "Tell me about the "
+        },
+        {
+          "text": "headquarters",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d16b2a63-d373-4e4d-9ca4-9890b6aed1c7",
+      "data": [
+        {
+          "text": "Headquarters",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d024a4aa-1188-48f0-a8f6-4ad0816e740c",
+      "data": [
+        {
+          "text": "History",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7282c2ef-b3b5-4dda-a0d0-056f39bb6399",
+      "data": [
+        {
+          "text": "I want to hear about the "
+        },
+        {
+          "text": "history",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "75f6d2c8-5bd2-45f5-b23c-cf4182825bd0",
+      "data": [
+        {
+          "text": "I want to hear about "
+        },
+        {
+          "text": "Google\u0027s history",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "4a35cf33-e446-4b2b-a284-c70bc4dfce17",
+  "name": "choose_fact",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "tell.fact",
+      "affectedContexts": [
+        {
+          "name": "choose_fact-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "choose_cats-followup",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@fact-category",
+          "name": "category",
+          "value": "$category",
+          "prompts": [
+            "Which category of fact do you want to hear? History or headquarters?",
+            "Would you like to hear about Google\u0027s headquarters, or its history?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

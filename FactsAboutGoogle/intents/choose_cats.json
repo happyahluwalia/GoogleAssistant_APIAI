@@ -1,0 +1,78 @@
+{
+  "userSays": [
+    {
+      "id": "5b92a8ba-8b17-4fe6-ac1c-b6be17e309aa",
+      "data": [
+        {
+          "text": "Cat facts"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0e83f65a-170d-4fb6-af27-911ae6a31195",
+      "data": [
+        {
+          "text": "Cats"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "21034d4e-afba-457a-8522-0a3469297e8d",
+      "data": [
+        {
+          "text": "I want to hear about cats"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "49795c03-2eed-427e-8835-e95262245900",
+      "data": [
+        {
+          "text": "Tell me about cats"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "14df3938-3776-477c-811c-d1758ecd15cb",
+  "name": "choose_cats",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "tell.cat.fact",
+      "affectedContexts": [
+        {
+          "name": "choose_cats-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "choose_fact-followup",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
